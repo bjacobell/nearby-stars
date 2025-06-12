@@ -1,0 +1,97 @@
+MESSIER031  0.77  0.9 Spiral           3.26E+09 2.05E+09 2.17E+08 8.85E+07 
+MESSIER033  0.85  4.1 Spiral           6.34E+08 4.00E+08 1.38E+08 6.34E+07 
+Dw1         2.8   5.1 Spiral           1.58E+10 1.58E+10 1.58E+10 1.58E+10 
+Maffei2     2.8   4.5 Spiral           2.91E+10 2.91E+10 2.91E+10 5.82E+09 
+NGC2403     3.18  6.1 Spiral           7.61E+09 2.28E+09 3.04E+08 1.62E+08 
+IC0342      3.28  4.5 Spiral           4.12E+10 4.12E+10 4.12E+10 1.24E+10 
+MESSIER081  3.63  3.8 Spiral           1.05E+11 3.14E+10 2.33E+09 2.23E+09 
+NGC4826     4.37  5.3 Spiral           3.44E+10 3.44E+10 3.44E+10 3.44E+10 
+NGC4244     4.49  7.7 Spiral           3.21E+09 3.21E+09 4.59E+08 2.14E+08 
+NGC4736     4.66  5.1 Spiral           4.86E+10 4.86E+10 4.86E+10 4.86E+10 
+NGC6503     5.27  7.3 Spiral           6.85E+09 6.85E+09 6.85E+09 1.37E+09 
+NGC6946     5.89  5.3 Spiral           6.64E+10 6.64E+10 1.33E+10 7.38E+09 
+NGC3344     6.85  7.4 Spiral           1.10E+10 1.10E+10 1.10E+10 1.58E+09 
+NGC0672     7.2   8.5 Spiral           4.04E+09 4.04E+09 1.35E+09 5.77E+08 
+NGC0628     7.31  6.8 Spiral           2.34E+10 2.34E+10 2.34E+10 3.34E+09 
+NGC4600     7.35  9.8 S0               1.13E+09 1.13E+09 1.13E+09 1.13E+09 
+MESSIER101  7.38  5.5 Spiral           8.91E+10 8.91E+10 8.91E+10 8.91E+10 
+NGC2787     7.48  7.2 Spiral           1.64E+10 1.64E+10 1.64E+10 1.64E+10 
+NGC5195     7.66  6.2 S0               4.76E+10 4.76E+10 4.76E+10 4.76E+10 
+NGC2683     7.73  6.3 Spiral           4.39E+10 4.39E+10 4.39E+10 6.26E+09 
+NGC4258     7.83  5.4 Spiral           1.12E+11 1.12E+11 1.12E+11 1.12E+11 
+NGC4136     7.9   9.3 Spiral           2.20E+09 2.20E+09 2.20E+09 2.20E+09 
+NGC7640     7.9   8.6 Spiral           4.47E+09 4.47E+09 2.24E+09 6.39E+08 
+NGC4618     7.9   8.6 Spiral           4.47E+09 4.47E+09 4.47E+09 6.39E+08 
+NGC4559     8.1   7.5 Spiral           1.44E+10 1.44E+10 2.06E+09 6.86E+08 
+NGC5194     8.4   5.5 Spiral           1.18E+11 1.18E+11 1.18E+11 1.18E+11 
+UGCA127     8.5   8.3 Spiral           7.12E+09 7.12E+09 7.12E+09 3.56E+09 
+Maffei1     3.01  5.5 Elliptical       1.24E+10 1.24E+10 2.48E+09 6.52E+08 
+NGC3379    11.12  6.2 Elliptical       1.08E+11 1.08E+11 1.08E+11 1.08E+11 
+NGC1400    24.5   7.8 Elliptical       1.21E+11 1.21E+11 1.21E+11 1.21E+11 
+LeoT        0.42 14.  Irregular        2.96E+04 2.96E+04 2.96E+04 2.96E+04 
+NGC6822     0.5   6.  Irregular        1.44E+08 1.44E+08 7.57E+06 3.89E+06 
+LGS 3       0.65 12.4 Irregular        3.91E+05 3.91E+05 3.91E+05 3.91E+05 
+IC0010      0.66  6.5 Irregular        1.60E+08 1.60E+08 2.28E+07 8.40E+06 
+IC1613      0.73  7.4 Irregular        8.00E+07 2.00E+07 2.96E+06 1.63E+06 
+Pegasus     0.76  9.8 Irregular        7.69E+06 7.69E+06 7.69E+06 1.10E+06 
+LeoA        0.81 10.4 Irregular        4.82E+06 4.82E+06 4.82E+06 4.82E+06 
+DDO210      0.94 11.2 Irregular        2.97E+06 2.97E+06 2.97E+06 2.97E+06 
+WLM         0.97  9.  Irregular        2.96E+07 2.96E+07 9.86E+06 5.91E+06 
+Sag dIr     1.04 12.1 Irregular        1.49E+06 1.49E+06 1.49E+06 2.98E+05 
+SexA        1.32 10.1 Irregular        1.91E+07 1.91E+07 1.91E+07 1.91E+06 
+SexB        1.36  9.5 Irregular        3.75E+07 3.75E+07 3.75E+07 5.35E+06 
+UGC04879    1.36 11.5 Irregular        4.94E+06 4.94E+06 4.94E+06 4.94E+06 
+HIZSS003    1.67 11.3 Irregular        9.51E+06 9.51E+06 9.51E+06 9.51E+06 
+UMin        0.06  7.6 Dwarf Spheroidal 3.83E+04 1.28E+04 5.36E+03 5.47E+03 
+Draco       0.08  6.6 Dwarf Spheroidal 1.54E+05 4.79E+04 2.96E+04 2.96E+04 
+SexDSph     0.09  7.  Dwarf Spheroidal 1.20E+06 1.20E+06 1.20E+06 1.20E+06 
+Hercules    0.15 10.6 Dwarf Spheroidal 9.63E+04 9.63E+04 9.63E+04 9.63E+04 
+LeoII       0.21  8.4 Dwarf Spheroidal 1.87E+06 1.87E+06 1.87E+06 1.87E+06 
+CVnI        0.22  9.7 Dwarf Spheroidal 5.56E+05 5.56E+05 5.56E+05 5.56E+05 
+And\_XVI    0.52 11.3 Dwarf Spheroidal 7.30E+05 7.30E+05 7.30E+05 7.30E+05 
+And\_XXIV   0.6  12.7 Dwarf Spheroidal 2.42E+05 2.42E+05 2.42E+05 2.42E+05 
+NGC0185     0.61  6.5 Dwarf Spheroidal 1.34E+08 6.71E+07 7.06E+06 2.74E+06 
+Bol520      0.63 13.3 Dwarf Spheroidal 1.47E+05 1.47E+05 1.47E+05 1.47E+05 
+And\_X      0.63 12.1 Dwarf Spheroidal 4.95E+05 4.95E+05 4.95E+05 4.95E+05 
+And\_II     0.65 10.7 Dwarf Spheroidal 2.19E+06 2.19E+06 2.19E+06 2.19E+06 
+And\_XIV    0.73 12.5 Dwarf Spheroidal 4.56E+05 4.56E+05 4.56E+05 4.56E+05 
+And\_XI     0.73 14.  Dwarf Spheroidal 9.98E+04 9.98E+04 9.98E+04 9.98E+04 
+And\_I      0.73  9.5 Dwarf Spheroidal 9.53E+06 9.53E+06 9.53E+06 9.53E+06 
+And XXIII   0.73 10.7 Dwarf Spheroidal 2.83E+06 2.83E+06 2.83E+06 2.83E+06 
+NGC4489    15.2   9.4 Elliptical       8.40E+09 8.40E+09 8.40E+09 8.40E+09 
+NGC4486B   15.4  10.1 Elliptical       4.25E+09 4.25E+09 4.25E+09 4.25E+09 
+MESSIER59  15.5   6.7 Elliptical       1.35E+11 1.35E+11 1.35E+11 1.35E+11 
+MESSIER49  15.81  5.4 Elliptical       5.27E+11 5.27E+11 5.27E+11 7.53E+10 
+NGC4478    16.    8.4 Elliptical       2.59E+10 2.59E+10 2.59E+10 2.59E+10 
+MESSIER86  16.08  6.1 Elliptical       2.69E+11 2.69E+11 2.99E+10 1.17E+10 
+NGC4473    16.18  7.2 Elliptical       8.95E+10 8.95E+10 8.95E+10 2.98E+10 
+NGC4660    16.4   8.2 Elliptical       3.35E+10 3.35E+10 3.35E+10 3.35E+10 
+MESSIER60  16.55  5.7 Elliptical       4.30E+11 4.30E+11 4.30E+11 4.30E+11 
+MESSIER87  16.6   5.8 Elliptical       3.91E+11 3.91E+11 3.91E+11 3.91E+11 
+MESSIER84  16.7   6.2 Elliptical       2.64E+11 2.64E+11 8.81E+10 3.30E+10 
+NGC4564    16.9   7.9 Elliptical       4.85E+10 4.85E+10 4.85E+10 4.85E+10 
+NGC4551    16.9   8.9 Elliptical       1.76E+10 1.76E+10 1.76E+10 1.76E+10 
+NGC4387    17.    9.2 Elliptical       1.32E+10 1.32E+10 1.32E+10 1.32E+10 
+NGC4239    17.4  10.2 Elliptical       5.03E+09 5.03E+09 5.03E+09 5.03E+09 
+NGC4458    17.6   9.3 Elliptical       1.28E+10 1.28E+10 1.28E+10 1.28E+10 
+NGC584     19.09  7.3 Elliptical       1.16E+11 1.16E+11 1.16E+11 1.16E+11 
+NGC1052    19.72  7.5 Elliptical       1.02E+11 1.02E+11 1.02E+11 1.02E+11 
+NGC596     21.08  8.  Elliptical       7.12E+10 7.12E+10 7.12E+10 7.12E+10 
+NGC7454    21.14  8.9 Elliptical       2.88E+10 2.88E+10 2.88E+10 2.88E+10 
+NGC4365    21.4   6.6 Elliptical       3.04E+11 3.04E+11 7.60E+10 2.34E+10 
+NGC4434    22.1   9.2 Elliptical       2.34E+10 2.34E+10 2.34E+10 2.34E+10 
+NGC720     23.18  7.3 Elliptical       1.78E+11 1.78E+11 1.78E+11 1.78E+11 
+NGC1407    23.26  6.7 Elliptical       3.30E+11 3.30E+11 3.30E+11 3.30E+10 
+NGC1172    23.7   9.2 Elliptical       2.73E+10 2.73E+10 2.73E+10 2.73E+10 
+NGC821     23.92  7.9 Elliptical       1.04E+11 1.04E+11 1.04E+11 1.04E+11 
+NGC5638    24.    8.3 Elliptical       6.99E+10 6.99E+10 6.99E+10 6.99E+10 
+NGC5322    24.1   9.9 Elliptical       1.39E+10 1.39E+10 1.39E+10 1.39E+10 
+NGC4318    24.16 10.3 Elliptical       9.35E+09 9.35E+09 9.35E+09 9.35E+09 
+NGC636     24.9   8.4 Elliptical       6.85E+10 6.85E+10 6.85E+10 6.85E+10 
+NGC5846    26.9   6.9 Elliptical       3.71E+11 3.71E+11 3.71E+11 2.97E+11 
+NGC3193    27.5   8.  Elliptical       1.28E+11 1.28E+11 1.28E+11 1.28E+11 
+NGC5831    27.5   8.4 Elliptical       8.52E+10 8.52E+10 8.52E+10 8.52E+10 
+NGC5845    27.6   9.1 Elliptical       4.23E+10 4.23E+10 4.23E+10 4.23E+10 
+NGC4168    28.1   8.4 Elliptical       8.94E+10 8.94E+10 8.94E+10 8.94E+10 
+NGC3226    29.1   8.6 Elliptical       7.88E+10 7.88E+10 7.88E+10 7.88E+10 
+NGC5813    29.2   7.6 Elliptical       2.19E+11 2.19E+11 2.19E+11 2.19E+11

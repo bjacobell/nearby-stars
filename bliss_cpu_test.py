@@ -22,7 +22,7 @@ file = '/datag/pipeline/AGBT23A_999_43/blc44_blp04/blc44_guppi_60233_38409_GJ144
 outdir = '/datax/scratch/benjb/bliss_LSCX_test/'
 
 snr_list = np.concatenate((np.arange(start=10, stop=36, step=5), [40, 50, 75, 100, 150, 200]))
-snr_list = np.array([20])
+snr_list = np.array([30])
 #snr_list = np.array([30])
 #snr_list = np.array([30])
 #l1_list = np.array([26,27,28,29,31,32,33,34])
@@ -33,17 +33,20 @@ l1_list = np.array([30])
 #fb.info()
 tvec = []
 
+extension_list = ['hits', 'dat']
+
 import time
 
 start = time.time()
 
 for snr in snr_list:
     for l1 in l1_list:
-        console = f'bliss_find_hits {file} -e /datax/scratch/benjb/bliss_LSCX_test/bliss_output/GBT_spliced_PFB_response.f32 -d cpu -md -4 -MD 4 -s {snr} --number-coarse 64 --distance {l1} --output ' + outdir + os.path.basename(file)[:-3] + f'_nosig_nosk_SNR_{snr}_L1_{l1}.dat'
-        os.system(console)
-        end = time.time()
-        #print(end - start)
-        tvec.append(end - start)
+        for extension in extension_list:
+            console = f'bliss_find_hits {file} -e /datax/scratch/benjb/bliss_LSCX_test/bliss_output/GBT_spliced_PFB_response.f32 -d cuda:0 -md -4 -MD 4 -s {snr} --number-coarse 64 --distance {l1} --output ' + outdir + os.path.basename(file)[:-3] + f'_nosig_nosk_SNR_{snr}_L1_{l1}.{extension}'
+            os.system(console)
+            end = time.time()
+            #print(end - start)
+            tvec.append(end - start)
 #         console = 'bliss_hits_to_dat -i ' + outdir + os.path.basename(file)[:-3] + f'_SNR_{snr}_L1_{l1}.hits -o ' + outdir + os.path.basename(file)[:-3] + f'_SNR_{snr}_L1_{l1}.dat'
 #         os.system(console)
 print(tvec)

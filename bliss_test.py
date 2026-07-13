@@ -8,23 +8,23 @@ import sys
 #for i in range(3):
 #    j = i+1
 
-file = '/datax/scratch/benjb/bliss_LSCX_test/spliced_blc4041424344454647_guppi_58885_63646_MESSIER081_0057.rawspec.0000.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_low_drift_every_2_kHz.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_test.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_many_widths_many_drifts.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_unresolved_evenmorespace.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/ANDXIV_S_injections_unresolved_evenmorespace.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz_snr1_1000.h5'
-file = '/datag/pipeline/AGBT23A_999_43/blc44_blp04/blc44_guppi_60233_38409_GJ144_0016.rawspec.0000.h5'
-file = '/datag/pipeline/AGBT16A_999_228/collate/spliced_blc00010203050607_guppi_57564_40340_HIP6290_0002.gpuspec.0000.h5'
-file = '/datag/pipeline/AGBT16A_999_219/holding/spliced_blc0001020304050607_guppi_57550_40640_GJ1002_0003.gpuspec.0000.h5'
-#file = '/datag/pipeline/AGBT18B_999_07/blc43_blp03/blc03_guppi_58348_31667_HIP3301_0014.gpuspec.0000.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/spliced_blc4041424344454647_guppi_58885_63646_MESSIER081_0057.rawspec.0000.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_low_drift_every_2_kHz.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_test.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_many_widths_many_drifts.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_unresolved_evenmorespace.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/ANDXIV_S_injections_unresolved_evenmorespace.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz_snr1_1000.h5'
+#file = '/datag/pipeline/AGBT23A_999_43/blc44_blp04/blc44_guppi_60233_38409_GJ144_0016.rawspec.0000.h5'
+#file = '/datag/pipeline/AGBT16A_999_228/collate/spliced_blc00010203050607_guppi_57564_40340_HIP6290_0002.gpuspec.0000.h5'
+#file = '/datag/pipeline/AGBT16A_999_219/holding/spliced_blc0001020304050607_guppi_57550_40640_GJ1002_0003.gpuspec.0000.h5'
+file = '/datag/pipeline/AGBT18B_999_07/blc43_blp03/blc03_guppi_58348_31667_HIP3301_0014.gpuspec.0000.h5'
 #file = '/datax/scratch/benjb/bliss_LSCX_test/quick_test/widths_to_10_blc73_guppi_58832_16209_MESSIER031_0057.rawspec.0000.h5'
 outdir = '/datax/scratch/benjb/test/'
 
 snr_list = np.concatenate((np.arange(start=10, stop=36, step=5), [40, 50, 75, 100, 150, 200]))
-snr_list = np.array([50])
+snr_list = np.array([5, 7, 10, 15, 20, 33])
 #snr_list = np.array([30])
 #snr_list = np.array([30])
 #l1_list = np.array([26,27,28,29,31,32,33,34])
@@ -40,17 +40,24 @@ import time
 start = time.time()
 
 for snr in snr_list:
+    print(snr)
     for l1 in l1_list:
-        for c in range(4):
-            print(c)
-            console = f'bliss_find_hits {file} -e /datax/scratch/benjb/bl_nearby_stars/GBT_spliced_PFB_response.f32 -d cuda:0 -md -4 -MD 4 -s {snr} --number-coarse 1 --coarse-channel {c} --nchan-per-coarse 1033216 --distance {l1} --output ' + outdir + os.path.basename(file)[:-3] + f'_nosig_nosk_SNR_{snr}_L1_{l1}_cc{c}.dat'
-            os.system(console)
-            end = time.time()
-            #print(end - start)
-            tvec.append(end - start)
-#         console = 'bliss_hits_to_dat -i ' + outdir + os.path.basename(file)[:-3] + f'_SNR_{snr}_L1_{l1}.hits -o ' + outdir + os.path.basename(file)[:-3] + f'_SNR_{snr}_L1_{l1}.dat'
-#         os.system(console)
+        # for c in range(4):
+        #     print(c)
+        #     #console = f'bliss_find_hits {file} -e /datax/scratch/benjb/bl_nearby_stars/GBT_spliced_PFB_response.f32 -d cuda:1 -md -4 -MD 4 -s {snr} --number-coarse 1 --coarse-channel {c} --nchan-per-coarse 1033216 --distance {l1} --output ' + outdir + os.path.basename(file)[:-3] + f'_nosig_nosk_SNR_{snr}_L1_{l1}_cc{c}.dat'
+        #     os.system(console)
+        #     end = time.time()
+        #     #print(end - start)
+        #     tvec.append(end - start)
+        start = time.time()
+        console = f'bliss_find_hits {file} -e /datax/scratch/benjb/bl_nearby_stars/GBT_spliced_PFB_response.f32 -d cuda:1 -md -4 -MD 4 -s {snr} --distance {l1} --output ' + outdir + os.path.basename(file)[:-3] + f'_nosig_nosk_SNR_{snr}_L1_{l1}.dat'
+        #console = 'bliss_hits_to_dat -i ' + outdir + os.path.basename(file)[:-3] + f'_SNR_{snr}_L1_{l1}.hits -o ' + outdir + os.path.basename(file)[:-3] + f'_SNR_{snr}_L1_{l1}.dat'
+        os.system(console)
+        end = time.time()
+        tvec.append(end-start)
 print(tvec)
+
+np.save('outdir'+'test_params.npy', np.array([tvec, snr_list]).T)
 
 #'bliss_find_hits /datag/pipeline/AGBT18B_999_07/blc43_blp03/blc03_guppi_58348_31667_HIP3301_0014.gpuspec.0000.h5 -e /datax/scratch/benjb/bliss_LSCX_test/0_0_GBT_channelizer_response.f32 -d cuda:0 -md -4 -MD 4 -s 30 --number-coarse 64 --filter-sigmaclip --filter-low-sk --filter-high-sk --distance 10 --output 000_test.dat'
 

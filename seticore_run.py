@@ -6,28 +6,29 @@ import pandas as pd
 from turbo_seti.find_doppler.find_doppler import FindDoppler
 
 
-file = '/datax/scratch/benjb/bliss_LSCX_test/quick_test/widths_to_10_blc73_guppi_58832_16209_MESSIER031_0057.rawspec.0000.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_low_drift_every_2_kHz.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_test.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_many_widths_many_drifts.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_unresolved_evenmorespace.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/ANDXIV_S_injections_unresolved_evenmorespace.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz.h5'
-file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz_snr1_1000.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/quick_test/widths_to_10_blc73_guppi_58832_16209_MESSIER031_0057.rawspec.0000.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_low_drift_every_2_kHz.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_test.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_many_widths_many_drifts.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/Voyager_injections_unresolved_evenmorespace.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/ANDXIV_S_injections_unresolved_evenmorespace.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz.h5'
+# file = '/datax/scratch/benjb/bliss_LSCX_test/synthetic_unresolved_vardrift1_32kHz_snr1_1000.h5'
 file = '/datag/pipeline/AGBT23A_999_43/blc44_blp04/blc44_guppi_60233_38409_GJ144_0016.rawspec.0000.h5'
-outdir = '/datax/scratch/benjb/bliss_LSCX_test/'
+outdir = '/datax/scratch/benjb/test/'
 
 #console = 'seticore ' + file + ' -M 4 -s 10 --output ' + outdir + os.path.basename(file)[:-2] + 'dat'
 #os.system(console)
 
 snr_list = np.concatenate((np.arange(start=5, stop=36), [40, 50, 75, 100, 125, 150, 200]))
 snr_list = np.array([2,3,4])
-snr_list = np.array([6])
+snr_list = np.array([5, 7, 10, 15, 20, 33])/3.3
 #snr_list = [10]
 
 import time
 
 start = time.time()
+times = []
 
 for snr in snr_list:
     print('SNR ' + str(snr))
@@ -40,10 +41,12 @@ for snr in snr_list:
     #               n_coarse_chan = 16
     #              )
     # doppler.search()
-    console = 'seticore ' + file + ' -M 4 -s ' + str(snr) + ' --output ' + outdir + os.path.basename(file)[:-2] + str(snr) + '_seticore.dat'
+    start = time.time()
+    console = 'CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=3 seticore ' + file + ' -M 4 -s ' + str(snr) + ' --output ' + outdir + os.path.basename(file)[:-2] + str(snr) + '_seticore.dat'
     os.system(console)
     end = time.time()
-    print(end-start)
+    times.append(end-start)
+print(times)
 
 # for i in range(10):
 #     j = i
